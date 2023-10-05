@@ -1,0 +1,8 @@
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+zig-cache
+zig-out

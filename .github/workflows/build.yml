@@ -1,0 +1,13 @@
+name: build main branch
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build:
+    name: Checkout code and build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - uses: goto-bus-stop/setup-zig@v2
+      - run: zig build
